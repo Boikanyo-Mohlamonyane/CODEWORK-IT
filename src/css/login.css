@@ -1,0 +1,119 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side {
+    width: 40%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.right-side {
+    width: 60%;
+    background: linear-gradient(to right, #000f5a, #6abedc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container {
+    background: white;
+    width: 850px;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 60px;
+    background: #cfcfcf;
+}
+
+.form-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000f5a;
+}
+
+.login-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.login-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    background: #0079b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005f8a;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-80%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    color: #555;
+}
+
+.toggle-password:hover {
+    color: #000f5a;
+}
